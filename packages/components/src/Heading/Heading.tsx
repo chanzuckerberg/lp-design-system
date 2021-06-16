@@ -13,11 +13,32 @@ type Props = {
    * and the `size` will be used to determine the styling.
    */
   as?: HeadingElement;
+  /**
+   * The text content to present.
+   */
   children: TypographyProps<HeadingElement>["children"];
-  className: TypographyProps<HeadingElement>["className"];
+  /**
+   * CSS class for custom styles.
+   */
+  className?: TypographyProps<HeadingElement>["className"];
+  /**
+   * The color of the text element. If no color provided, defaults to a base color.
+   */
   color?: TypographyProps<HeadingElement>["color"];
+  /**
+   * The size of the html element. If no `as` prop is provided, then
+   * the component uses this value to determine which html tag to render
+   * (e.g. 'h1', 'h2', etc.)
+   */
   size: TypographyProps<HeadingElement>["size"];
+  /**
+   * Specifies font weight as either bold or normal.
+   */
   weight?: TypographyProps<HeadingElement>["weight"];
+  /**
+   * Specifies the bottom-margin that should be applied to the typography element.
+   * "1x" is an interval of 8px
+   */
   spacing?: TypographyProps<HeadingElement>["spacing"];
 };
 
